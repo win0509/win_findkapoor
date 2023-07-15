@@ -1,0 +1,470 @@
+/************ Nav menu ************/
+header{
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 110px;
+    padding: 0 7.5rem;
+    transition: all .3s;
+}
+header .nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #fff; */
+}
+header.active{
+    background-color: #fff;
+}
+header .nav .logo{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: var(--ff-en-jost);
+    color: #000;
+    padding-right: 2rem;
+}
+
+header .nav .menu-bar,
+header .nav .info-bar{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+header .nav .menu-bar li a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--ff-en-jost);
+    color: #000;
+}
+
+header .nav .info-bar li a{
+    font-size: 1.625rem;
+    font-weight: 400;
+    font-family: var(--ff-en-jost);
+    color: #000;
+}
+
+
+
+/************ Swiper Main slide ************/
+.main-slides .slide{
+    position: relative;
+}
+
+.main-slides .slide .slide-img{
+    width: 100%;
+    height: 100%;
+}
+.main-slides .slide .slide-img img{
+    width: 100%;
+}
+
+.main-slides .slide .slide-view-box{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.main-slides .slide .slide-view-box p{
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-family: var(--ff-en-jost);
+    color: #fff;
+   
+}
+.main-slides .slide .slide-view-box .bm-box{
+    display: flex;
+    column-gap: 1.75rem;
+}
+
+.main-slides .slide .slide-view-box .bm-box .buy,
+.main-slides .slide .slide-view-box .bm-box .more{
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    line-height: 60px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var( --ff-kr-gothic);
+    color: #fff;
+    transition:all .5s;
+    cursor: pointer;
+}
+.main-slides .slide .slide-view-box .bm-box .buy:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.main-slides .slide .slide-view-box .bm-box .more:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/*** Swiper button custom ***/
+.main-slides .swiper-button-next,
+.main-slides .swiper-button-prev{
+    color: #fff !important;
+}
+
+
+
+/************ Banner Content ************/
+.banner-content{
+    padding: 7rem 0;
+}
+.banner-content .content-box{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    column-gap: 3.125rem;
+}
+.banner-content .content-box .content{
+    width: 525px;
+    height: 700px;
+}
+
+.banner-content .content-box .content-2{
+    margin-top: 7.5rem;
+} 
+
+.banner-content .content-box .content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content .banner-text{
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+.banner-content .banner-text .brand{
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-family: var(--ff-en-jost);
+    color: #000;
+}
+.banner-content .banner-text p{
+    font-size: 3.75rem;
+    font-weight: 600;
+    font-family: var(--ff-en-jost);
+    color: #000;
+}
+
+.banner-content .banner-text .banner-btn{
+    margin-top: 1.75rem;
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: var(--ff-en-jost);
+    cursor: pointer;
+    transition: all .5s;
+}
+.banner-content .banner-text .banner-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+/************ Shop By Style section ************/
+.style-section{
+    padding: 7rem 0;
+}
+
+.style-section .item-wrap{
+    width: 100%;
+    display: flex;
+}
+.style-section .item-wrap .item .category{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: var(--ff-en-jost);
+    color: #000;
+    padding: 1.25rem 0 0 1.25rem;
+    display: block;
+}
+.style-section .item-wrap .style-1{
+    width: 25%;
+    height: 600px;
+    background-image: url(../image/style-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+.style-section .item-wrap .style-2{
+    width: 25%;
+    height: 600px;
+    background-image: url(../image/style-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+
+}
+.style-section .item-wrap .style-3{
+    width: 25%;
+    height: 600px;
+    background-image: url(../image/style-3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+
+}
+.style-section .item-wrap .style-4{
+    width: 25%;
+    height: 600px;
+    background-image: url(../image/style-4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .3s;
+}
+
+/*** Style Hover ***/
+.style-section .item-wrap .style-1:hover{
+    width: 25%;
+    height: 600px;
+    background-image: url(../image/style-1-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.style-section .item-wrap .style-2:hover{
+    width: 25%;
+    height: 600px;
+    background-image: url(../image/style-2-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.style-section .item-wrap .style-3:hover{
+    width: 25%;
+    height: 600px;
+    background-image: url(../image/style-3-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.style-section .item-wrap .style-4:hover{
+    width: 25%;
+    height: 600px;
+    background-image: url(../image/style-4-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/************ Swiper New Product section ************/
+.product-section{
+   padding: 7rem 0;
+}
+
+.product-section .product-slides .pd-1{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-2{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-3{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-4{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-5{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-5.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-6{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-6.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-7{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-7.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-8{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-8.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*** product Hover ***/
+.product-section .product-slides .pd-1:hover{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-1-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-2:hover{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-2-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-3:hover{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-3-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-4:hover{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-4-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-5:hover{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-5-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-6:hover{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-6-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-7:hover{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-7-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product-section .product-slides .pd-8:hover{
+    width: 100%;
+    height: 530px;
+    background-image: url(../image/product-8-hover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*** Swiper button custom ***/
+.product-slides .swiper-button-next,
+.product-slides .swiper-button-prev{
+    color: #000 !important;
+}
+
+.product-section .product-slides .product-info-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: .5rem;
+    padding-top: 1rem;
+}
+.product-section .product-slides .product-info-box .name{
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: var(--ff-kr-gothic);
+    color: #3F3F3F;
+}
+.product-section .product-slides .product-info-box .price{
+    font-size: 1.125rem;
+    font-weight: 500;
+    font-family: var(--ff-kr-gothic);
+    color: #3F3F3F;
+}
+
+
+.product-section .product-slides .product-info-box .color-box{
+    display: flex;
+    column-gap: .5rem;
+}
+.product-section .product-slides .product-info-box .color-box .color{
+    width: 16px;
+    height: 16px;
+    border: 1px solid #606060;
+}
+
+/*** Product Color ***/
+.clb-1 .color:nth-child(1){background-color: #f3f56f;}
+.clb-1 .color:nth-child(2){background-color: #000;}
+.clb-1 .color:nth-child(3){background-color: #6D8EB6;}
+
+.clb-2 .color:nth-child(1){background-color: #A5EFFF;}
+.clb-2 .color:nth-child(2){background-color: #D487F8;}
+.clb-2 .color:nth-child(3){background-color: #FFF4D7;}
+
+.clb-3 .color:nth-child(1){background-color: #BF7646;}
+.clb-3 .color:nth-child(2){background-color: #E4AE88;}
+
+.clb-4 .color:nth-child(1){background-color: #EDC3C1;}
+.clb-4 .color:nth-child(2){background-color: #F8B087;}
+.clb-4 .color:nth-child(3){background-color: #FFF4D7;}
+
+.clb-5 .color:nth-child(1){background-color: #000;}
+.clb-5 .color:nth-child(2){background-color: #FFF4D7;}
+
+.clb-6 .color:nth-child(1){background-color: #fff;}
+
+.clb-7 .color:nth-child(1){background-color: #89e285;}
+.clb-7 .color:nth-child(2){background-color: #85d4e2;}
+.clb-7 .color:nth-child(3){background-color: #b65cdf;}
+
+.clb-8 .color:nth-child(1){background-color: #eb0fb4;}
+.clb-8 .color:nth-child(2){background-color: #f65656;}
+.clb-8 .color:nth-child(3){background-color: #5e5cdf;}
+

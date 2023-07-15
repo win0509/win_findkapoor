@@ -10,18 +10,257 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
-    <!-- AOS LINK -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
     <!-- AWESOME FONT LINK -->
     <script src="https://kit.fontawesome.com/8f976a5b78.js" crossorigin="anonymous"></script>
+    
+     <!-- AOS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div class="nav">
+            <ul class="menu-bar">
+                <h2 class="logo">FIND KAPOOR</h2>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">CAMPAIGN</a></li>
+                <li><a href="#">PROMOTION</a></li>
+            </ul>
+            <ul class="info-bar">
+                <li><a href="#">login</a></li>
+                <li><a href="#">cart(0)</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Swiper Main slide -->
+  <div class="swiper mySwiper main-slides">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide">
+        <div class="slide-img">
+            <img src="./image/slider-1.jpg" alt="첫번째 슬라이드 이미지">
+        </div>
+        <div class="slide-view-box">
+            <p>FIND KAPOOR</p>
+            <p>23 S/S Collection Part1</p>
+            <div class="bm-box">
+                <div class="buy">구매하기</div>
+                <div class="more">자세히 보기</div>
+            </div>
+        </div>
+      </div>
+     
+      <div class="swiper-slide slide">
+        <div class="slide-img">
+            <img src="./image/slider-2.jpg" alt="두번째 슬라이드 이미지">
+        </div>
+        <div class="slide-view-box">
+            <p>FIND KAPOOR</p>
+            <p>23 S/S New Product</p>
+            <div class="bm-box">
+                <div class="buy">구매하기</div>
+                <div class="more">자세히 보기</div>
+            </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+        <div class="slide-img">
+            <img src="./image/slider-3.jpg" alt="세번째 슬라이드 이미지">
+        </div>
+        <div class="slide-view-box">
+            <p>FIND KAPOOR</p>
+            <p>23 S/S Collection Part2</p>
+            <div class="bm-box">
+                <div class="buy">구매하기</div>
+                <div class="more">자세히 보기</div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+    <!--Banner Content section-->
+  <section class="banner-content">
+    <div class="container">
+        <div class="content-box" data-aos="fade-down" data-aos-duration="500" data-aos-offset="200">
+            <div class="content">
+                <img src="./image/item-1.jpg" alt="">
+            </div>
+            <div class="content content-2">
+                <img src="./image/item-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="./image/item-3.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="banner-text">
+            <p class="brand">FIND KAPOOR</p>
+            <p>"Don’t quit your daydream</p>
+            <p>It’s your life that you’re making"</p>
+
+            <div class="banner-btn">SHOW NOW</div>
+        </div>
+
+    </div>
+  </section>
     
-    
+  <!-- Shop By Style section -->
+  <section class="style-section">
+    <div class="container">
+        <div class="title">
+            <p>SHOP BY STYLE</p>
+        </div>
+        <div class="item-wrap">
+            <div class="item style-1">
+                <span class="category">CROSS</span>
+            </div>
+            <div class="item style-2">
+                <span class="category">BUCKET</span>
+            </div>
+            <div class="item style-3">
+                <span class="category">SHOULDER</span>
+            </div>
+            <div class="item style-4">
+                <span class="category">TOTE</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Swiper New Product section -->
+  <section class="product-section">
+        <div class="container">
+            <div class="title">
+                <p>NEW PRODUCT</p>
+            </div>
+
+            <div class="swiper mySwiper product-slides">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product-slide-img pd-1"></div>
+                        <div class="product-info-box">
+                            <p class="name">리아백 19 크링클드</p>
+                            <p class="price">119,000원</p>
+                            <div class="color-box clb-1">
+                                <div class="color"></div>
+                                <div class="color"></div>
+                                <div class="color"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-slide-img pd-2"></div>
+                        <div class="product-info-box">
+                            <p class="name">리아백 27 크링클드</p>
+                            <p class="price">149,000원</p>
+                            <div class="color-box clb-2">
+                                <div class="color"></div>
+                                <div class="color"></div>
+                                <div class="color"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-slide-img pd-3"></div>
+                        <div class="product-info-box">
+                            <p class="name">마티 브리백 24 리자드</p>
+                            <p class="price">159,000원</p>
+                            <div class="color-box clb-3">
+                                <div class="color"></div>
+                                <div class="color"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="product-slide-img pd-4"></div>
+                        <div class="product-info-box">
+                            <p class="name">핑고백 20 베이직 레터링 라인세트</p>
+                            <p class="price">149,000원</p>
+                            <div class="color-box clb-4">
+                                <div class="color"></div>
+                                <div class="color"></div>
+                                <div class="color"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-slide-img pd-5"></div>
+                        <div class="product-info-box">
+                            <p class="name">마티 웨지백 22 크링클드</p>
+                            <p class="price">119,000원</p>
+                            <div class="color-box clb-5">
+                                <div class="color"></div>
+                                <div class="color"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-slide-img pd-6"></div>
+                        <div class="product-info-box">
+                            <p class="name">마티 웨지백 22 크링클드</p>
+                            <p class="price">149,000원</p>
+                            <div class="color-box clb-6">
+                                <div class="color"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-slide-img pd-7"></div>
+                        <div class="product-info-box">
+                            <p class="name">마티 로라백 21 크링클드</p>
+                            <p class="price">119,000원</p>
+                            <div class="color-box clb-7">
+                                <div class="color"></div>
+                                <div class="color"></div>
+                                <div class="color"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-slide-img pd-8"></div>
+                        <div class="product-info-box">
+                            <p class="name">벨티백 25 크링클드</p>
+                            <p class="price">119,000원</p>
+                            <div class="color-box clb-8">
+                                <div class="color"></div>
+                                <div class="color"></div>
+                                <div class="color"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+            </div>
+        </div> 
+  </section>
 
 
 
-    <!-- JS LINK -->
-    <script src="./js/custom.js"></script>
+
+
+
+   
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+     <!-- JS LINK -->
+     <script src="./js/custom.js"></script>
+  <script>
+    // AOS
+    AOS.init()
+  </script>
+
 </body>
 </html>

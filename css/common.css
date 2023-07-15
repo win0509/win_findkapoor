@@ -1,0 +1,16 @@
+/* Container */
+.container{
+    padding: 0 7.5rem;
+}
+
+
+/* Title Style */
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 2.75rem;
+    font-weight: 400;
+    font-family: var(--ff-en-jost);
+    color: #737373;
+    padding-bottom: 1rem;
+}
