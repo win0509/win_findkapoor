@@ -35,4 +35,25 @@ var swiper = new Swiper(".product-slides", {
       },
   });
 
+  // Md Pick Section Tab Menu
+  const btns = document.querySelectorAll('.btns button');
+  const panels = document.querySelectorAll('.panels .panel'); 
+
+function activeTabs(i){
+  btns.forEach((btn) => {
+    btn.classList.remove('active')
+  });
+
+  panels.forEach((panel) => {
+    panel.style.display = 'none';
+  });
+  btns[i].classList.add('active');
+  panels[i].style.display = 'block';
+}
+
+btns.forEach((btn, idx) => {
+  btn.addEventListener('click', () =>{
+    activeTabs(idx);
+  });
+});
 
