@@ -49,6 +49,7 @@ function activeTabs(i){
   });
   btns[i].classList.add('active');
   panels[i].style.display = 'block';
+
 }
 
 btns.forEach((btn, idx) => {
