@@ -12,12 +12,40 @@ if(scryTop > 0){
 }
 });
 
+//Mobile Header Show
+const MobileHeader = document.querySelector('.mobile-header');
+window.addEventListener('scroll', function(){
+  const MobilescryTop = window.scrollY;
+
+  if(MobilescryTop > 0){
+    MobileHeader.classList.add('active');
+}else{
+    MobileHeader.classList.remove('active');
+}
+});
+
+////Mobile Menu,Close Icon
+const MenuIcon = document.querySelector('.m-menu-icon');
+const CloseIcon = document.querySelector('.m-close');
+const MobileMenuwrap = document.querySelector('.mobile-menu-wrap');
+
+MenuIcon.addEventListener('click', function(){
+  MobileMenuwrap.style.display = "block";
+});
+
+CloseIcon.addEventListener('click', function(){
+  MobileMenuwrap.style.display = "none";
+});
 
 //Swiper Main slide Navigation
 var swiper = new Swiper(".main-slides", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
     },
   });
 
@@ -28,6 +56,10 @@ var swiper = new Swiper(".product-slides", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
     },
     navigation: {
         nextEl: ".swiper-button-next",
@@ -58,3 +90,28 @@ btns.forEach((btn, idx) => {
   });
 });
 
+
+//Top Button
+const topBtn = document.querySelector('.top-btn');
+const up = document.querySelector('.up i');
+const text = document.querySelector('.text');
+
+
+window.addEventListener('scroll' , function(){
+    const scrY = window.scrollY;
+    // console.log(scrY)
+    if(scrY > 824){
+        topBtn.style.display='block';
+    }else{
+        topBtn.style.display='none';
+    }if(scrY > 5472){
+      up.classList.add('active');
+      text.classList.add('active');
+    }else{
+      up.classList.remove('active');
+      text.classList.remove('active');
+    }
+});
+topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, left:0, behavior:'smooth'})
+  });

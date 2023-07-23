@@ -47,7 +47,13 @@ header .nav .info-bar li a{
     color: #000;
 }
 
-
+/************ Nav menu ************/
+.mobile-header{
+    display: none;
+}
+.mobile-menu-wrap{
+    display: none;
+}
 
 /************ Swiper Main slide ************/
 .main-slides .slide{
@@ -60,6 +66,8 @@ header .nav .info-bar li a{
 }
 .main-slides .slide .slide-img img{
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .main-slides .slide .slide-view-box{
@@ -526,6 +534,7 @@ header .nav .info-bar li a{
 }
 .md-section .wrapper .panels .panel .bag-item .bag-info-box .name-wish{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .md-section .wrapper .panels .panel .bag-item .bag-info-box .name-wish .name{
@@ -559,7 +568,7 @@ header .nav .info-bar li a{
 
 /************ Instagram Section ************/
 .instargram-section{
-    padding: 7rem 0;
+    padding-top: 7rem;
 }
 .instargram-section .insta-background{
     width: 100%;
@@ -572,6 +581,7 @@ header .nav .info-bar li a{
 }
 .instargram-section .insta-title{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-top: 5rem;
 }
@@ -643,3 +653,67 @@ header .nav .info-bar li a{
 }
 
 
+/************ Instagram Section ************/
+footer{
+    padding: 5rem 0;
+    background-color: #000;
+    color: #fff;
+    font-family: var(--ff-kr-gothic);
+    font-size: 1rem;
+}
+footer .footer-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-wrap .guide{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+footer .footer-wrap .guide .cs-center{
+    line-height: 2;
+}
+footer .footer-wrap .guide .cs-center h2{
+    font-size: 1.75rem;
+    font-weight: 300;
+    font-family: var(--ff-en-jost);
+}
+footer .footer-wrap .guide .cs-center p{
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: var(--ff-en-jost);
+}
+footer .footer-wrap .guide .business-hours{
+    line-height: 2.5;
+}
+footer .footer-wrap .guide .address{
+    line-height: 2;
+}
+footer .footer-wrap .guide .address span{
+    padding-right: 1rem;
+}
+footer .footer-wrap .guide .address p{
+    letter-spacing: 1px;
+}
+
+footer .footer-wrap .footer-menu{
+    display: flex;
+    column-gap: 3.75rem;
+}
+footer .footer-wrap .footer-menu ul{
+    font-size: 1.75rem;
+    font-weight: 300;
+    font-family: var(--ff-en-jost);
+}
+footer .footer-wrap .footer-menu ul li:first-child{
+    padding-top: 2rem;
+}
+footer .footer-wrap .footer-menu ul li{
+    line-height: 1.2;
+}
+footer .footer-wrap .footer-menu ul li a{
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: var(--ff-kr-gothic);
+    color: #fff;
+}

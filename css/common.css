@@ -14,3 +14,35 @@
     color: #737373;
     padding-bottom: 1rem;
 }
+
+/* Top Button Style */
+.top-btn{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    display: none;
+  
+}
+.top-btn .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.top-btn .top .up i{
+    color: #000;
+}
+.top-btn .text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--ff-en-jost);
+    color: #000;
+}
+
+.top-btn .top .up i.active{
+    color: #fff;
+}
+.top-btn .text.active{
+    color: #fff;
+}
