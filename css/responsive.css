@@ -439,6 +439,11 @@
         font-size: .6rem;
     }
 
+    /* Top Button Style */
+    .top-btn .text{
+        font-size: 1.2rem;
+    }
+
 }/* max-width 1200px end */
 
 
@@ -449,11 +454,17 @@
   }
     /* Container */
     .container{
-        padding: 0 3.8rem;
+        padding: 0 2.5rem;
     }
   /**** Mobile Header ****/
     header{
         display: none;
+    }
+
+     /* Title Style */
+     .title{
+        font-size: 1.2rem;
+        padding-bottom: .4rem;
     }
 
     /** Logo & Menu icon **/
@@ -534,5 +545,456 @@
         color: #828282;
     }
 
+    /****  Banner Content ****/
+    .banner-content .content-box{
+        column-gap: 1.6rem;
+    }
+    .banner-content .content-box .content{
+        width: 336px;
+        height: 358px;
+    }
+    .banner-content .content-box .content-2{
+        margin-top: 3.8rem;
+    }
+    .banner-content .banner-text{
+        padding-top: 2.6rem;
+        row-gap: .4rem;
+    }
+    .banner-content .banner-text .brand{
+        font-size: 1.2rem;
+    }
+    .banner-content .banner-text p{
+        font-size: 2rem;
+    }
+    .banner-content .banner-text .banner-btn{
+        border: 1.5px solid #000;
+        width: 102px;
+        height: 30px;
+        line-height: 30px;
+        font-size: .6rem;
+    }
 
-}
+    /**** Shop By Style section ****/
+    .style-section .item-wrap {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* row-gap: .5rem;
+        column-gap: .5rem; */
+    }
+    .style-section .item-wrap .style-1,
+    .style-section .item-wrap .style-2,
+    .style-section .item-wrap .style-3,
+    .style-section .item-wrap .style-4{
+        width: 50%;
+        height: 400px;
+    }
+    .style-section .item-wrap .style-1:hover,
+    .style-section .item-wrap .style-2:hover,
+    .style-section .item-wrap .style-3:hover,
+    .style-section .item-wrap .style-4:hover{
+        width: 50%;
+        height: 400px;
+    }
+
+     /**** Swiper New Product section  ****/
+     .product-section .product-slides .pd-1,
+     .product-section .product-slides .pd-2,
+     .product-section .product-slides .pd-3,
+     .product-section .product-slides .pd-4,
+     .product-section .product-slides .pd-5,
+     .product-section .product-slides .pd-6,
+     .product-section .product-slides .pd-7,
+     .product-section .product-slides .pd-8{
+         height: 265px;
+     }
+     .product-section .product-slides .pd-1:hover,
+     .product-section .product-slides .pd-2:hover,
+     .product-section .product-slides .pd-3:hover,
+     .product-section .product-slides .pd-4:hover,
+     .product-section .product-slides .pd-5:hover,
+     .product-section .product-slides .pd-6:hover,
+     .product-section .product-slides .pd-7:hover,
+     .product-section .product-slides .pd-8:hover{
+         height: 265px;
+     }
+     .product-section .product-slides .product-info-box{
+        row-gap: .2rem;
+        padding-top: .6rem;
+    }
+    .product-section .product-slides .product-info-box .name,
+    .product-section .product-slides .product-info-box .price{
+        font-size: .8rem;
+    }
+    .product-section .product-slides .product-info-box .color-box{
+        column-gap: .2rem;
+    }
+    .product-section .product-slides .product-info-box .color-box .color{
+        width: 10px;
+        height: 10px;
+    }
+
+     /**** Md Pick Section ****/
+     .md-section .wrapper .btns{
+        column-gap: 3rem;
+     }
+     .md-section .wrapper .panels .panel .bag-items .bag-item:last-child{
+        display: none;
+     }
+     .md-section .wrapper .btns button{
+        font-size: 1rem;
+     }
+     .md-section .wrapper .panels .panel .bag-items{
+        column-gap: .6rem;
+     }
+     .md-section .wrapper .panels .panel .bag-item{
+        width: calc(100% / 3);
+     }
+     .md-section .wrapper .panels{
+        padding-top: 1rem;
+    }
+    .md-section .wrapper .panels .panel .bag-item .bag-img{
+        height: 280px;
+    }
+    .md-section .wrapper .panels .panel .bag-item .bag-info-box .name-wish .name{
+        font-size: .8rem;
+    }
+    .md-section .wrapper .panels .panel .bag-item .bag-info-box .name-wish i{
+        font-size: .7rem;
+        padding-right: .6rem;
+    }
+    .md-section .wrapper .panels .panel .bag-item .bag-info-box .price{
+        font-size: .7rem;
+    }
+    .md-section .wrapper .panels .panel .bag-item .md-btn{
+        font-size: .6rem;
+        padding-top: 1.2rem;
+        border-bottom: 1px solid #B00000;
+    }
+     /**** Instagram Section ****/
+     .instargram-section .insta-title p:first-child{
+        font-size: 1.5rem;
+     }
+     .instargram-section .insta-title p:last-child{
+        font-size: 1rem;
+     }
+     .instargram-section .insta-wrap{
+        column-gap: .4rem;
+    }
+     .instargram-section .insta-wrap .insta-items{
+        height: 358px;
+     }
+     .instargram-section .insta-wrap .insta-items-1{
+        column-gap: .4rem;
+     }
+     .instargram-section .insta-wrap .insta-items-2{
+        row-gap: .4rem;
+    }
+     .instargram-section .insta-wrap .insta-items-1 .insta-item-left{
+        height: calc(358px + .4rem);
+     }
+     .instargram-section .insta-wrap .insta-items-1 .insta-item-right{
+        row-gap: .4rem;
+     }
+     .instargram-section .insta-wrap .insta-items-2 .insta-item-top{
+        column-gap: .4rem;
+     }
+      /* Footer */
+      footer{
+        padding: 2.6rem 0;
+        font-size: .6rem;
+    }
+    footer .footer-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        row-gap: 3rem;
+    }
+    footer .footer-wrap .guide .cs-center p{
+        font-size: 1.4rem;
+    }
+    footer .footer-wrap .guide .address p{
+        letter-spacing: -.4px;
+    }
+
+    /* Top Button Style */
+    .top-btn{
+        right: 12px;
+        bottom: 12px;
+    }
+    .top-btn .top .up i{
+        font-size: .8rem;
+    }
+    .top-btn .text{
+        font-size: 1rem;
+    }
+
+}/* max-width 800px end */
+
+
+@media screen and (max-width:600px){
+    /* Container */
+      .container{
+        padding: 0 1rem;
+    }
+     /* Section Padding */
+     .banner-content,.style-section,.product-section,.md-section{
+        padding: 3.5em 0;
+    }
+     /** Logo & Menu icon **/
+     .mobile-header{
+        padding: 0 1rem;
+    }
+    .mobile-header .mobile-header-wrap .m-logo{
+        font-size: 1.4rem;
+    }
+    .mobile-menu-wrap .nav .m-close{
+        padding: 0 1rem;
+    }
+    .mobile-menu-wrap .nav .mobile-menu-bar li a{
+        font-size: 1.4rem;
+    }
+    /**** Swiper Main slide ****/
+    .main-slides .slide .slide-view-box p{
+        font-size: 1.2rem;
+    }
+    .main-slides .slide .slide-view-box .bm-box{
+        column-gap: .8rem;
+    }
+    .main-slides .slide .slide-view-box .bm-box .buy,
+    .main-slides .slide .slide-view-box .bm-box .more{
+        width: 115px;
+        height: 34px;
+        font-size: .5rem;
+        line-height: 34px;
+        border: 1.5px solid #fff;
+    }
+
+    /****  Banner Content ****/
+    .banner-content .content-box .content:nth-child(1),
+    .banner-content .content-box .content:nth-child(3){
+        display: none;
+    }
+    .banner-content .content-box{
+        column-gap: 0;
+    }
+    .banner-content .content-box .content-2{
+        width: 100%;
+        height: 350px;
+        margin-top: 0;
+    }
+    .banner-content .content-box .content-2 img{
+        width: 100%;
+        height: 100%;
+    }
+    .banner-content .banner-text p{
+        font-size: 1.8rem;
+    }
+
+    /**** Shop By Style section ****/
+    .style-section .item-wrap .style-1,
+    .style-section .item-wrap .style-2,
+    .style-section .item-wrap .style-3,
+    .style-section .item-wrap .style-4{
+        width: 50%;
+        height: 350px;
+    }
+    .style-section .item-wrap .style-1:hover,
+    .style-section .item-wrap .style-2:hover,
+    .style-section .item-wrap .style-3:hover,
+    .style-section .item-wrap .style-4:hover{
+        width: 50%;
+        height: 350px;
+    }
+     /**** Md Pick Section ****/
+     .md-section .wrapper .panels .panel .bag-items .bag-item:nth-child(3){
+        display: none;
+     }
+     .md-section .wrapper .panels .panel .bag-item{
+        width: calc(100% / 2);
+     }
+    
+      /**** Instagram Section ****/
+      .instargram-section .insta-wrap{
+        display: block;
+     }
+     .instargram-section .insta-wrap{
+        /* column-gap: .2rem; */
+    }
+     .instargram-section .insta-wrap .insta-items{
+        height: 280px;
+     }
+     .instargram-section .insta-wrap .insta-items-1{
+        width: 100%;
+        /* column-gap: .2rem; */
+        margin-bottom: .3rem;
+     }
+     .instargram-section .insta-wrap .insta-items-2{
+        width: 100%;
+        /* row-gap: .2rem; */
+    }
+     .instargram-section .insta-wrap .insta-items-1 .insta-item-left{
+        width: 100%;
+        height: 100%;
+     }
+     .instargram-section .insta-wrap .insta-items-1 .insta-item-right{
+        width: 100%;
+        /* row-gap: .2rem; */
+     }
+     .instargram-section .insta-wrap .insta-items-2 .insta-item-top{
+        /* column-gap: .2rem; */
+        height: 100%;
+     }
+     .instargram-section .insta-wrap .insta-items .insta-item-bottom{
+        display: none;
+     }
+
+   
+       /* Top Button Style */
+    .top-btn{
+        right: 10px;
+        bottom: 10px;
+    }
+    .top-btn .top .up i{
+        font-size: .6rem;
+    }
+    .top-btn .text{
+        font-size: .8rem;
+    }
+}/* max-width 600px end */
+
+@media screen and (max-width:400px){
+     /* Container */
+     .container{
+        padding: 0 .6rem;
+    }
+      /* Section Padding */
+      .banner-content,.style-section,.product-section,.md-section{
+        padding: 2rem 0;
+    }
+
+     /** Logo & Menu icon **/
+     .mobile-header{
+        padding: 0 .6rem;
+        height: 65px;
+    }
+    .mobile-menu-wrap .nav .m-close{
+        padding: 0 .6rem;
+    }
+    .mobile-header .mobile-header-wrap .m-logo{
+        font-size: 1.2rem;
+    }
+    .mobile-menu-wrap .nav .mobile-menu-bar li a{
+        font-size: 1.2rem;
+    }
+     /**** Swiper Main slide ****/
+     .main-slides .slide .slide-view-box p{
+        font-size: 1.1rem;
+    }
+    .main-slides .slide .slide-view-box .bm-box{
+        column-gap: .6rem;
+    }
+    /****  Banner Content ****/
+
+    .banner-content .banner-text .brand{
+        font-size: 1rem;
+    }
+    .banner-content .banner-text p{
+        font-size: 1.4rem;
+    }
+    .banner-content .banner-text{
+        padding-top: 2rem;
+    }
+    .banner-content .banner-text .banner-btn{
+        margin-top: 1rem;
+    }
+
+    /**** Shop By Style section ****/
+    .style-section .item-wrap{
+        display: block;
+    }
+    .style-section .item-wrap .style-1,
+    .style-section .item-wrap .style-2,
+    .style-section .item-wrap .style-3,
+    .style-section .item-wrap .style-4{
+        width: 100%;
+        height: 500px;
+    }
+    .style-section .item-wrap .style-1:hover,
+    .style-section .item-wrap .style-2:hover,
+    .style-section .item-wrap .style-3:hover,
+    .style-section .item-wrap .style-4:hover{
+        width: 100%;
+        height: 500px;
+    }
+
+     /**** Md Pick Section ****/
+     .product-section .product-slides .pd-1,
+     .product-section .product-slides .pd-2,
+     .product-section .product-slides .pd-3,
+     .product-section .product-slides .pd-4,
+     .product-section .product-slides .pd-5,
+     .product-section .product-slides .pd-6,
+     .product-section .product-slides .pd-7,
+     .product-section .product-slides .pd-8{
+         height: 350px;
+     }
+     .product-section .product-slides .pd-1:hover,
+     .product-section .product-slides .pd-2:hover,
+     .product-section .product-slides .pd-3:hover,
+     .product-section .product-slides .pd-4:hover,
+     .product-section .product-slides .pd-5:hover,
+     .product-section .product-slides .pd-6:hover,
+     .product-section .product-slides .pd-7:hover,
+     .product-section .product-slides .pd-8:hover{
+         height: 350px;
+     }
+
+     /**** Md Pick Section ****/
+     .md-section .wrapper .btns{
+        column-gap: 1.8rem;
+     }
+     .md-section .wrapper .btns button.active{
+        border-bottom: 2px solid #3F3F3F;
+    }
+     .md-section .wrapper .panels .panel .bag-items .bag-item:nth-child(2){
+        display: none;
+     }
+     .md-section .wrapper .panels .panel .bag-item{
+        width: 100%;
+     }
+     .md-section .wrapper .panels .panel .bag-item .bag-img{
+        height: 360px;
+     }
+     .md-section .wrapper .panels .panel .bag-item .md-btn{
+        font-size: .8rem;
+     }
+
+     /**** Instagram Section ****/
+     .instargram-section .insta-title p:first-child{
+        font-size: 1.2rem;
+     }
+     .instargram-section .insta-title p:last-child{
+        font-size: .8rem;
+     }
+     .instargram-section .insta-wrap .insta-items{
+        height: 220px;
+     }
+
+     /* Footer */
+     footer{
+        font-size: .5rem;
+     }
+     footer .footer-wrap .guide .cs-center h2, footer .footer-wrap .footer-menu ul{
+        font-size: .8rem;
+     }
+     footer .footer-wrap .guide .cs-center p{
+        font-size: 1.2rem;
+     }
+     footer .footer-wrap .footer-menu{
+        column-gap: 1.8rem;
+     }
+
+}/* max-width 400px end */

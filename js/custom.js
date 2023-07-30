@@ -65,6 +65,26 @@ var swiper = new Swiper(".product-slides", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
+
+      breakpoints: {
+        800: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+        },
+        600: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+        },
+        500: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 10,
+        },
+        0: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        },
+      },
   });
 
   // Md Pick Section Tab Menu
@@ -99,15 +119,20 @@ const text = document.querySelector('.text');
 
 window.addEventListener('scroll' , function(){
     const scrY = window.scrollY;
-    // console.log(scrY)
+    console.log(scrY)
     if(scrY > 824){
         topBtn.style.display='block';
     }else{
         topBtn.style.display='none';
+
     }if(scrY > 5472){
       up.classList.add('active');
       text.classList.add('active');
-    }else{
+    }else if(scrY > 4510){
+      up.classList.add('active');
+      text.classList.add('active');
+    }
+    else{
       up.classList.remove('active');
       text.classList.remove('active');
     }
